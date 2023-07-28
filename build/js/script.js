@@ -1,3 +1,10 @@
+let output = document.getElementById("output");
+const formToReset = document.getElementById("contact_form");
+formToReset.addEventListener("submit", (e) => {
+  e.preventDefault();
+  formToReset.reset();
+  output.innerHTML += "The form is resetted successfully!";
+});
 // Add an event listener to the window for the scroll event
 window.addEventListener("scroll", function () {
   const navbar = document.getElementById("navbar");
@@ -39,6 +46,12 @@ let x = setInterval(function () {
   }
 }, 1000);
 
+// Function to close the mobile menu
+function closeMobileMenu() {
+  const navbar = document.getElementById("navbar-default");
+  navbar.classList.add("hidden"); // Add the "hidden" class to hide the menu
+}
+
 // Function to toggle the visibility of the mobile menu
 function toggleMobileMenu() {
   const navbar = document.getElementById("navbar-default");
@@ -50,3 +63,9 @@ const phoneModeButton = document.querySelector(
   '[data-collapse-toggle="navbar-default"]'
 );
 phoneModeButton.addEventListener("click", toggleMobileMenu);
+
+// Add an event listener to close the menu when a link inside it is clicked
+const menuLinks = document.querySelectorAll("#navbar-default a");
+menuLinks.forEach((link) => {
+  link.addEventListener("click", closeMobileMenu);
+});

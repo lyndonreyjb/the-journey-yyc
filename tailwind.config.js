@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         titan: "'Gloock', serif",
+        jost: "'Jost', sans-serif;",
       },
     },
   },

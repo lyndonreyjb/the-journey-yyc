@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth">
+<html class="scroll-smooth scroll-pt-14">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gloock&family=Titan+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap"
       rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="bg-slate-100">
     <!-- Navbar -->
     <nav
       id="navbar"
@@ -47,7 +47,7 @@
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
             id="menu"
-            class="uppercase font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-blue-800">
+            class="uppercase font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent bg-blue-800">
             <li>
               <a
                 href="#home"
@@ -65,7 +65,7 @@
             </li>
             <li>
               <a
-                href="./index.html"
+                href="#contact"
                 class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >Contact</a
               >
@@ -75,13 +75,6 @@
                 href="./index.html"
                 class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >Sponsors</a
-              >
-            </li>
-            <li>
-              <a
-                href="./index.html"
-                class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >Location</a
               >
             </li>
           </ul>
@@ -96,7 +89,7 @@
         </a>
       </div>
     </nav>
-    <!-- Main content -->
+    <!-- Header content -->
     <header
       id="home"
       class="relative bg-cover"
@@ -186,10 +179,11 @@
         <div class="md:w-1/2 flex items-center justify-center">
           <div class="w-full p-2 flex flex-col items-center">
             <div>
-              <h3 class="text-blue-950 text-5xl font-bold">
+              <h3
+                class="font-jost text-blue-950 md:text-5xl text-3xl font-bold">
                 What is The Journey?
               </h3>
-              <p class="text-base sm:mt-2">
+              <p class="text-base sm:mt-2 font-jost">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatum consequatur nesciunt libero. Quam nisi facilis quae
                 nam repellendus, aliquid possimus eius molestias esse cumque?
@@ -200,14 +194,143 @@
         </div>
       </div>
     </main>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20053.118653466!2d-113.95785335!3d51.07819839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537164ae4403b267%3A0xeee823d941589438!2sVillage%20Square%20Leisure%20Centre!5e0!3m2!1sen!2sca!4v1690525373848!5m2!1sen!2sca"
-      width="100%"
-      height="400"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Contact -->
+    <div id="contact" class="max-w-screen-xl mx-auto bg-white mb-8">
+      <div class="sm:flex w-full">
+        <!-- Socials -->
+        <div class="sm:w-1/2 p-6 bg-white">
+          <h1 class="text-3xl font-bold mb-4 text-blue-950 font-jost">
+            Contact Us
+          </h1>
+
+          <p class="text-gray-700 leading-relaxed font-jost">
+            For prompt assistance regarding fees and availability, please feel
+            free to send us a message. We'll swiftly provide you with the
+            information you seek. Looking forward to hearing from you!
+          </p>
+
+          <div class="mt-6 grid md:grid-cols-3 grid-cols-1 gap-4">
+            <div class="text-gray-600 flex flex-col font-bold font-jost">
+              Phone: <span class="font-light">403 403 4033</span>
+            </div>
+            <div class="text-gray-600 flex flex-col font-bold font-jost">
+              Email:
+              <a href="mailto: abc@example.com">
+                <span class="font-light">email@gmail.com</span></a
+              >
+            </div>
+            <div
+              class="text-gray-600 flex flex-col font-bold col-span-2 font-jost">
+              Address:
+              <span class="font-light">2623 56 St NE, Calgary, AB T1Y 5J1</span>
+            </div>
+          </div>
+          <div class="flex items-center mt-14 justify-center space-x-4">
+            <div class="w-1/5 h-px bg-gray-400"></div>
+            <div class="flex items-center space-x-4">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/facebook.svg"
+                  alt="facebook" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/instagram.svg"
+                  alt="instagram" />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/youtube.svg"
+                  alt="youtube" />
+              </a>
+              <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/linkedin.svg"
+                  alt="linkedin" />
+              </a>
+            </div>
+            <div class="w-1/5 h-px bg-gray-400"></div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="sm:w-1/2 mx-auto p-8 bg-white mt-4 sm:mt-0 font-jost">
+          <div class="p-6 rounded-md shadow-xl">
+            <h1 class="text-3xl font-bold mb-4 text-blue-950">
+              Leave a Message
+            </h1>
+
+            <form
+              id="contact_form"
+              action="https://formsubmit.co/donrey427@gmail.com"
+              method="POST"
+              class="space-y-4">
+              <div class="flex flex-col">
+                <label for="name" class="text-blue-950 font-bold mb-1"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 placeholder-gray-400"
+                  placeholder="Full Name"
+                  required />
+              </div>
+              <div class="flex flex-col">
+                <label for="email" class="text-blue-950 font-bold mb-1"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 placeholder-gray-400"
+                  placeholder="email@example.com"
+                  required />
+              </div>
+              <div class="flex flex-col">
+                <label for="message" class="text-blue-950 font-bold mb-1"
+                  >Your Message</label
+                >
+                <textarea
+                  class="px-4 py-2 border border-gray-300 rounded-md resize-none focus:outline-none focus:border-blue-500 placeholder-gray-400"
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Write your message here..."
+                  required></textarea>
+              </div>
+              <div class="mt-8">
+                <button
+                  type="submit"
+                  class="focus:outline-none py-3 px-8 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-lg">
+                  Submit
+                </button>
+              </div>
+            </form>
+            <p id="output"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-96">
+        <!-- Location -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20053.118653466!2d-113.95785335!3d51.07819839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537164ae4403b267%3A0xeee823d941589438!2sVillage%20Square%20Leisure%20Centre!5e0!3m2!1sen!2sca!4v1690525373848!5m2!1sen!2sca"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-blue-700 bottom-0 left-0 w-full">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
