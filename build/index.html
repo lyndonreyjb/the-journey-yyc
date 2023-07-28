@@ -26,7 +26,7 @@
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-zinc-300"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-blue-800"
           aria-controls="navbar-default"
           aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -47,7 +47,7 @@
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
             id="menu"
-            class="uppercase font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+            class="uppercase font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-blue-800">
             <li>
               <a
                 href="#home"
@@ -68,6 +68,13 @@
                 href="./index.html"
                 class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html"
+                class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Sponsors</a
               >
             </li>
             <li>
@@ -103,14 +110,14 @@
         class="w-full max-w-screen-xl mx-auto p-4 md:py-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div class="text-center flex-col">
           <h2
-            class="uppercase text-white text-base md:text-3xl font-light mt-2">
+            class="uppercase text-white text-base sm:text-3xl font-light mt-2">
             Creating Friends, not Just Connections
           </h2>
           <h1
-            class="font-titan text-white text-5xl md:text-8xl font-bold uppercase mt-2">
+            class="font-titan text-white text-5xl sm:text-8xl font-bold uppercase mt-2">
             The Journey
           </h1>
-          <div class="text-white font-light text-base md:text-xl mt-2">
+          <div class="text-white font-light text-base sm:text-xl mt-2">
             August 28, 2023 | Calgary, Alberta
           </div>
 
@@ -126,10 +133,7 @@
       </div>
     </header>
     <!-- Countdown -->
-    <div
-      id="countdown"
-      class="w-full bg-gradient-to-r from-cyan-400 to-blue-600"
-      style="height: 15vh">
+    <div id="countdown" class="w-full bg-blue-600" style="height: 15vh">
       <div
         class="max-w-screen-xl h-full flex flex-wrap items-center justify-center mx-auto">
         <div class="md:block hidden md:mr-8">
@@ -140,31 +144,31 @@
 
         <div
           class="text-center uppercase flex justify-center space-x-2 lg:space-x-14 text-white">
-          <div class="bg-blue-700 rounded-lg md:w-24 w-20 md:h-24 h-20 p-2">
+          <div class="bg-blue-700 rounded-lg sm:w-24 w-20 sm:h-24 h-20 p-2">
             <span
               id="days"
-              class="flex justify-center text-2xl md:text-5xl font-bold"></span>
+              class="flex justify-center text-2xl sm:text-5xl font-bold"></span>
             days
           </div>
 
-          <div class="bg-blue-700 rounded-lg md:w-24 w-20 md:h-24 h-20 p-2">
+          <div class="bg-blue-700 rounded-lg sm:w-24 w-20 sm:h-24 h-20 p-2">
             <span
               id="hours"
-              class="flex justify-center text-2xl md:text-5xl font-bold"></span>
+              class="flex justify-center text-2xl sm:text-5xl font-bold"></span>
             hrs
           </div>
 
-          <div class="bg-blue-700 rounded-lg md:w-24 w-20 md:h-24 h-20 p-2">
+          <div class="bg-blue-700 rounded-lg sm:w-24 w-20 sm:h-24 h-20 p-2">
             <span
               id="minutes"
-              class="flex justify-center text-2xl md:text-5xl font-bold"></span>
+              class="flex justify-center text-2xl sm:text-5xl font-bold"></span>
             min
           </div>
 
-          <div class="bg-blue-700 rounded-lg md:w-24 w-20 md:h-24 h-20 p-2">
+          <div class="bg-blue-700 rounded-lg sm:w-24 w-20 sm:h-24 h-20 p-2">
             <span
               id="seconds"
-              class="flex justify-center text-2xl md:text-5xl font-bold"></span>
+              class="flex justify-center text-2xl sm:text-5xl font-bold"></span>
             sec
           </div>
         </div>
@@ -173,19 +177,19 @@
 
     <!-- Main content -->
     <main class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <div class="flex" id="about">
-        <div class="w-1/2 p-2">
+      <div class="sm:flex" id="about">
+        <div class="md:w-1/2 p-2">
           <img
             class="object-cover h-full w-full rounded-lg"
             src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1112&q=80" />
         </div>
-        <div class="w-1/2 flex items-center justify-center">
+        <div class="md:w-1/2 flex items-center justify-center">
           <div class="w-full p-2 flex flex-col items-center">
             <div>
               <h3 class="text-blue-950 text-5xl font-bold">
                 What is The Journey?
               </h3>
-              <p class="text-base">
+              <p class="text-base sm:mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatum consequatur nesciunt libero. Quam nisi facilis quae
                 nam repellendus, aliquid possimus eius molestias esse cumque?
