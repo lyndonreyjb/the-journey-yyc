@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,7 +50,7 @@
             class="uppercase font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
             <li>
               <a
-                href="./index.html"
+                href="#home"
                 class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 aria-current="page"
                 >Home</a
@@ -58,7 +58,7 @@
             </li>
             <li>
               <a
-                href="./index.html"
+                href="#about"
                 class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >About</a
               >
@@ -68,6 +68,13 @@
                 href="./index.html"
                 class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html"
+                class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Location</a
               >
             </li>
           </ul>
@@ -84,6 +91,7 @@
     </nav>
     <!-- Main content -->
     <header
+      id="home"
       class="relative bg-cover"
       style="
         background-image: url('https://images.unsplash.com/photo-1576085898323-218337e3e43c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
@@ -165,10 +173,37 @@
 
     <!-- Main content -->
     <main class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <div class="">
-        <h3 class="text-black text-4xl font-bold">What is The Journey?</h3>
+      <div class="flex" id="about">
+        <div class="w-1/2 p-2">
+          <img
+            class="object-cover h-full w-full rounded-lg"
+            src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1112&q=80" />
+        </div>
+        <div class="w-1/2 flex items-center justify-center">
+          <div class="w-full p-2 flex flex-col items-center">
+            <div>
+              <h3 class="text-blue-950 text-5xl font-bold">
+                What is The Journey?
+              </h3>
+              <p class="text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum consequatur nesciunt libero. Quam nisi facilis quae
+                nam repellendus, aliquid possimus eius molestias esse cumque?
+                Ipsum at fuga itaque similique asperiores!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20053.118653466!2d-113.95785335!3d51.07819839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537164ae4403b267%3A0xeee823d941589438!2sVillage%20Square%20Leisure%20Centre!5e0!3m2!1sen!2sca!4v1690525373848!5m2!1sen!2sca"
+      width="100%"
+      height="400"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
     <!-- Footer -->
     <footer class="bg-blue-700 bottom-0 left-0 w-full">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -198,12 +233,15 @@
           </ul>
         </div>
         <hr class="my-6 border-blue-800 sm:mx-auto lg:my-8" />
-        <span
-          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-          >© 2023
-          <a href="https://flowbite.com/" class="hover:underline"
-            >The Journey YYC</a
-          >. All Rights Reserved.</span
+        <span class="block text-sm text-gray-200 sm:text-center"
+          >© 2023 <a href="" class="hover:underline">The Journey YYC</a>. All
+          Rights Reserved.</span
+        >
+        <span class="block text-xs text-gray-400 sm:text-center"
+          >Designed by
+          <a href="https://www.lyndonbualat.co/" target="_blank">
+            Lyndonbualat.co
+          </a></span
         >
       </div>
     </footer>
