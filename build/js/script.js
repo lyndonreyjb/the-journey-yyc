@@ -4,11 +4,9 @@ window.addEventListener("scroll", function () {
 
   // Check the scroll position to determine if the background should be added or removed
   if (window.scrollY > 0) {
-    navbar.classList.add("text-neutral-900");
-    navbar.classList.add("bg-neutral-100"); // Add the background color
+    navbar.classList.remove("md:bg-transparent"); // Add the background color
   } else {
-    navbar.classList.remove("text-neutral-900");
-    navbar.classList.remove("bg-neutral-100"); // Remove the background color
+    navbar.classList.add("md:bg-transparent"); // Remove the background color
   }
 });
 // Set the date we're counting down to
