@@ -1,7 +1,7 @@
 {
   "name": "the-journey-yyc",
   "scripts": {
-    "run":  "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
+    "tailwind":  "tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
