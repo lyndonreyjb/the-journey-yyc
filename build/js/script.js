@@ -1,10 +1,3 @@
-let output = document.getElementById("output");
-const formToReset = document.getElementById("contact_form");
-formToReset.addEventListener("submit", (e) => {
-  e.preventDefault();
-  formToReset.reset();
-  output.innerHTML += "The form is resetted successfully!";
-});
 // Add an event listener to the window for the scroll event
 window.addEventListener("scroll", function () {
   const navbar = document.getElementById("navbar");
