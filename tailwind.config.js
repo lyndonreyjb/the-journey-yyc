@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         titan: "'Gloock', serif",
         jost: "'Jost', sans-serif;",
+        volkron: "'Vollkorn', serif",
       },
     },
   },
