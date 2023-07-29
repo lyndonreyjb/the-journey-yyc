@@ -7,11 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
   </head>
 
-  <body class="bg-slate-100">
+  <body class="bg-blue-50">
     <!-- Navbar -->
     <nav
       id="navbar"
@@ -72,7 +72,7 @@
             </li>
             <li>
               <a
-                href="./index.html"
+                href="#sponsors"
                 class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >Sponsors</a
               >
@@ -107,7 +107,7 @@
             Creating Friends, not Just Connections
           </h2>
           <h1
-            class="font-titan text-white text-5xl sm:text-8xl font-bold uppercase mt-2">
+            class="font-volkron text-white text-5xl sm:text-8xl font-bold uppercase mt-2">
             The Journey
           </h1>
           <div class="text-white font-light text-base sm:text-xl mt-2">
@@ -130,7 +130,7 @@
       <div
         class="max-w-screen-xl h-full flex flex-wrap items-center justify-center mx-auto">
         <div class="md:block hidden md:mr-8">
-          <h1 class="text-white font-bold md:text-4xl text-2xl">
+          <h1 class="text-white font-bold md:text-4xl text-2xl font-jost">
             Save the date!
           </h1>
         </div>
@@ -168,38 +168,265 @@
       </div>
     </div>
 
-    <!-- Main content -->
-    <main class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <div class="sm:flex" id="about">
-        <div class="md:w-1/2 p-2">
+    <!-- About Event -->
+    <div class="w-full max-w-screen-xl mx-auto mt-8" id="about">
+      <!-- About Event -->
+      <div class="sm:flex md:pb-0 pb-4 bg-white">
+        <div class="md:w-1/2 w-full h-96">
           <img
-            class="object-cover h-full w-full rounded-lg"
+            class="object-cover h-full w-full"
             src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1112&q=80" />
         </div>
-        <div class="md:w-1/2 flex items-center justify-center">
-          <div class="w-full p-2 flex flex-col items-center">
+        <div class="md:w-1/2 w-full flex items-center justify-center">
+          <div class="md:w-5/6 w-full p-2 flex flex-col items-center">
             <div>
               <h3
-                class="font-jost text-blue-950 md:text-5xl text-3xl font-bold">
+                class="mb-2 mt-2 font-volkron text-blue-950 md:text-5xl text-3xl font-bold">
                 What is The Journey?
               </h3>
-              <p class="text-base sm:mt-2 font-jost">
+              <p class="text-base sm:mt-2 mb-4 font-jost">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatum consequatur nesciunt libero. Quam nisi facilis quae
                 nam repellendus, aliquid possimus eius molestias esse cumque?
                 Ipsum at fuga itaque similique asperiores!
               </p>
+
+              <button
+                class="uppercase focus:outline-none py-3 px-6 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-lg">
+                <a href="https://www.eventbrite.ca/" target="_blank">
+                  Buy Tickets
+                </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </main>
+      <!--Venue -->
+      <div class="sm:flex bg-neutral-50 md:pb-0 pb-4">
+        <div class="md:w-1/2 md:order-2 order-1 w-full h-96">
+          <img
+            class="object-cover h-full w-full"
+            src="https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" />
+        </div>
+        <div class="md:w-1/2 w-full flex items-center justify-center">
+          <div class="md:w-4/6 w-full p-2 flex flex-col md:items-center">
+            <div>
+              <h3
+                class="mb-2 mt-2 font-volkron text-blue-950 md:text-5xl text-3xl font-bold">
+                Venue
+              </h3>
+              <span class="font-jost"
+                >Located at the heart of downtown, come and join us! Press
+                <a
+                  href="https://goo.gl/maps/Mtbku3TCqhBKuJG79"
+                  target="_blank"
+                  class="underline text-blue-500">
+                  here </a
+                >to open map</span
+              >
+              <div class="text-gray-600 font-bold font-jost mt-2">
+                Address:
+                <p class="font-light">2623 56 St NE, Calgary, AB T1Y 5J1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--About Me-->
+    <div class="w-full max-w-screen-xl mx-auto bg-white">
+      <div>
+        <div class="flex justify-center">
+          <div class="flex w-full sm:flex-row flex-col sm:justify-between">
+            <div class="sm:h-full h-96 sm:w-96">
+              <img
+                class="h-full w-full object-cover"
+                src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" />
+            </div>
+            <div
+              class="w-full sm:w-5/6 flex flex-col items-center justify-center p-4 sm:p-14">
+              <p class="font-jost mt-4">
+                Hi, my name is Name. As an ambitious and driven individual, I am
+                passionate about bringing people together and creating a
+                positive impact within my community. With a keen eye for
+                organization and a natural flair for networking, I embarked on
+                the journey of starting this event with the goal of fostering
+                meaningful connections and empowering like-minded professionals.
+              </p>
+              <div class="flex w-full mt-4 space-x-4">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img
+                    class="h-8 text-blue-600"
+                    src="./assets/facebook.svg"
+                    alt="facebook" />
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img
+                    class="h-8 text-blue-600"
+                    src="./assets/instagram.svg"
+                    alt="instagram" />
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img
+                    class="h-8 text-blue-600"
+                    src="./assets/youtube.svg"
+                    alt="youtube" />
+                </a>
+                <a href="https://www.linkedin.com/feed/" target="_blank">
+                  <img
+                    class="h-8 text-blue-600"
+                    src="./assets/linkedin.svg"
+                    alt="linkedin" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Sponsors-->
+    <div
+      id="sponsors"
+      class="w-full max-w-screen-xl pb-20 mx-auto p-4 bg-neutral-50">
+      <h1
+        class="text-center p-14 font-volkron text-blue-950 md:text-5xl text-5xl font-bold">
+        Sponsors
+      </h1>
+      <div class="flex justify-center gap-6 flex-wrap font-jost">
+        <div class="w-full md:w-96 p-8 bg-white rounded-md shadow-md">
+          <div class="h-52 w-52 rounded-full mx-auto">
+            <img
+              class="h-full w-full object-cover rounded-full"
+              src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+              alt="Profile Picture" />
+          </div>
+          <div class="w-full flex flex-col items-center justify-center">
+            <h4 class="mt-4">Name: John</h4>
+            <p class="font-jost text-center">
+              As an ambitious and driven individual, I am passionate about
+              bringing people together and creating a positive impact within my
+              community.
+            </p>
+            <div class="flex mt-4 space-x-4">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/facebook.svg"
+                  alt="facebook" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/instagram.svg"
+                  alt="instagram" />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/youtube.svg"
+                  alt="youtube" />
+              </a>
+              <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/linkedin.svg"
+                  alt="linkedin" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-96 p-8 bg-white rounded-md shadow-md">
+          <div class="h-52 w-52 rounded-full mx-auto">
+            <img
+              class="h-full w-full object-cover rounded-full"
+              src="https://images.unsplash.com/photo-1602233158242-3ba0ac4d2167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80"
+              alt="Profile Picture" />
+          </div>
+          <div class="w-full flex flex-col items-center justify-center">
+            <h4 class="mt-4">Name: John</h4>
+            <p class="font-jost text-center">
+              As an ambitious and driven individual, I am passionate about
+              bringing people together and creating a positive impact within my
+              community.
+            </p>
+            <div class="flex mt-4 space-x-4">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/facebook.svg"
+                  alt="facebook" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/instagram.svg"
+                  alt="instagram" />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/youtube.svg"
+                  alt="youtube" />
+              </a>
+              <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/linkedin.svg"
+                  alt="linkedin" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-96 p-8 bg-white rounded-md shadow-md">
+          <div class="h-52 w-52 rounded-full mx-auto">
+            <img
+              class="h-full w-full object-cover rounded-full"
+              src="https://images.unsplash.com/photo-1495047651840-fcda6e971948?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="Profile Picture" />
+          </div>
+          <div class="w-full flex flex-col items-center justify-center">
+            <h4 class="mt-4">Name: John</h4>
+            <p class="font-jost text-center">
+              As an ambitious and driven individual, I am passionate about
+              bringing people together and creating a positive impact within my
+              community.
+            </p>
+            <div class="flex mt-4 space-x-4">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/facebook.svg"
+                  alt="facebook" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/instagram.svg"
+                  alt="instagram" />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/youtube.svg"
+                  alt="youtube" />
+              </a>
+              <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img
+                  class="h-8 text-blue-600"
+                  src="./assets/linkedin.svg"
+                  alt="linkedin" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Contact -->
     <div id="contact" class="max-w-screen-xl mx-auto bg-white mb-8">
       <div class="sm:flex w-full">
         <!-- Socials -->
-        <div class="sm:w-1/2 p-6 bg-white">
-          <h1 class="text-3xl font-bold mb-4 text-blue-950 font-jost">
+        <div class="sm:w-1/2 p-4 bg-white">
+          <h1 class="text-3xl font-bold mb-4 text-blue-950 font-volkron">
             Contact Us
           </h1>
 
@@ -256,11 +483,10 @@
             <div class="w-1/5 h-px bg-gray-400"></div>
           </div>
         </div>
-
         <!-- Form -->
-        <div class="sm:w-1/2 mx-auto p-8 bg-white mt-4 sm:mt-0 font-jost">
+        <div class="sm:w-1/2 mx-auto p-4 bg-white mt-4 sm:mt-0 font-jost">
           <div class="p-6 rounded-md shadow-xl">
-            <h1 class="text-3xl font-bold mb-4 text-blue-950">
+            <h1 class="text-3xl font-bold mb-4 text-blue-950 font-volkron">
               Leave a Message
             </h1>
 
@@ -316,9 +542,8 @@
           </div>
         </div>
       </div>
-
-      <div class="w-full h-96">
-        <!-- Location -->
+      <!-- Location -->
+      <div class="w-full h-96" id="location">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20053.118653466!2d-113.95785335!3d51.07819839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537164ae4403b267%3A0xeee823d941589438!2sVillage%20Square%20Leisure%20Centre!5e0!3m2!1sen!2sca!4v1690525373848!5m2!1sen!2sca"
           width="100%"
