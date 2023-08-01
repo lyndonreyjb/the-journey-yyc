@@ -962,18 +962,8 @@ video {
   font-family: 'Jost', sans-serif;;
 }
 
-<<<<<<< HEAD
-.font-titan {
-  font-family: 'Gloock', serif;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-=======
 .font-volkron {
   font-family: 'Vollkorn', serif;
->>>>>>> 4123c007e66f46cba8571f4227b476cce50289de
 }
 
 .text-3xl {
@@ -1030,14 +1020,11 @@ video {
   line-height: 1.625;
 }
 
-<<<<<<< HEAD
-=======
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
->>>>>>> 4123c007e66f46cba8571f4227b476cce50289de
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -1083,13 +1070,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-<<<<<<< HEAD
-=======
 .underline {
   text-decoration-line: underline;
 }
 
->>>>>>> 4123c007e66f46cba8571f4227b476cce50289de
 .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
