@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/event.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Oswald:wght@200;300;400;500;600;700&family=Volkhov&display=swap"
       rel="stylesheet" />
   </head>
 
@@ -15,18 +16,18 @@
     <!-- Navbar -->
     <nav
       id="navbar"
-      class="fixed w-full z-40 transition-all text-neutral-100 bg-blue-600">
+      class="fixed w-full z-40 transition-all text-neutral-100 bg-neutral-900">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
-        <a class="flex items-center">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap"
-            >Logo</span
-          >
+        <a href="#home" class="flex items-center">
+          <div class="w-10">
+            <img src="./assets/WhiteLogo.png" class="h-full w-full" />
+          </div>
         </a>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-blue-800"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-neutral-800"
           aria-controls="navbar-default"
           aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -47,11 +48,11 @@
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
             id="menu"
-            class="uppercase font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent bg-blue-800">
+            class="uppercase font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent bg-neutral-800">
             <li>
               <a
                 href="#home"
-                class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                class="block py-2 pl-3 pr-4 rounded hover:bg-neutral-500 md:hover:bg-transparent md:border-0 md:hover:text-neutral-400 md:p-0"
                 aria-current="page"
                 >Home</a
               >
@@ -59,22 +60,22 @@
             <li>
               <a
                 href="#about"
-                class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                class="block py-2 pl-3 pr-4 rounded hover:bg-neutral-500 md:hover:bg-transparent md:border-0 md:hover:text-neutral-400 md:p-0"
                 >About</a
               >
             </li>
             <li>
               <a
                 href="#contact"
-                class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                class="block py-2 pl-3 pr-4 rounded hover:bg-neutral-500 md:hover:bg-transparent md:border-0 md:hover:text-neutral-400 md:p-0"
                 >Contact</a
               >
             </li>
             <li>
               <a
-                href="#sponsors"
-                class="block py-2 pl-3 pr-4 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >Sponsors</a
+                href="#speakers"
+                class="block py-2 pl-3 pr-4 rounded hover:bg-neutral-500 md:hover:bg-transparent md:border-0 md:hover:text-neutral-400 md:p-0"
+                >Speakers</a
               >
             </li>
           </ul>
@@ -84,7 +85,7 @@
           href="https://www.eventbrite.ca/"
           target="_blank"
           id="ticket"
-          class="hidden uppercase md:flex py-2 px-4 justify-center items-center rounded-md border-2 border-blue-700 font-semibold hover:text-white hover:bg-blue-500 hover:border-blue-500 focus:outline-none">
+          class="hidden uppercase md:flex py-2 px-4 justify-center items-center rounded-md border-2 border-neutral-50 font-semibold hover:text-white hover:bg-neutral-500 hover:border-neutral-500 focus:outline-none">
           Buy Tickets
         </a>
       </div>
@@ -92,76 +93,94 @@
     <!-- Header content -->
     <header
       id="home"
-      class="relative bg-cover"
+      class="relative object-contain"
       style="
-        background-image: url('https://images.unsplash.com/photo-1576085898323-218337e3e43c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-        height: 85vh;
+        background-image: url('./assets/JourneyBackground.jpg');
+        height: 90vh;
       ">
       <div
         class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
       <div
-        class="w-full max-w-screen-xl mx-auto p-4 md:py-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <div class="text-center flex-col">
-          <h2
-            class="uppercase text-white text-base sm:text-3xl font-light mt-2">
-            Creating Friends, not Just Connections
-          </h2>
-          <h1
-            class="font-volkron text-white text-5xl sm:text-8xl font-bold uppercase mt-2">
-            The Journey
-          </h1>
-          <div class="text-white font-light text-base sm:text-xl mt-2">
-            August 28, 2023 | Calgary, Alberta
-          </div>
-
-          <div class="mt-8">
-            <a
-              href="https://www.eventbrite.ca/"
-              target="_blank"
-              class="uppercase focus:outline-none py-3 px-6 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-lg">
-              Buy Tickets
-            </a>
+        class="mt-5 w-full max-w-screen-lg mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div class="flex items-center justify-center">
+          <div class="h-full w-full max-w-screen-lg">
+            <img
+              src="./assets/JourneyHeader.png"
+              class="h-full w-full object-contain" />
           </div>
         </div>
       </div>
     </header>
+
+    <!-- <div
+      class="w-full bg-white flex flex-col justify-center items-center"
+      style="height: 25vh">
+      <div>
+        <h1 class="text-center text-2xl uppercase font-bold">
+          All University / Post-Secondary Business Students!
+        </h1>
+        <div class="flex justify-center gap-3 font-medium text-xl">
+          <span> - UofC - </span>
+          <span> - MRU - </span>
+          <span> - SAIT - </span>
+          <span> - AMBROSE - </span>
+          <span> - ETC - </span>
+        </div>
+        <div class="flex justify-between items-center">
+          <h3 class="font-medium text-xl text-center">
+            Les Moulins La Fayette<br />8400 Blackfoot Trail SE
+          </h3>
+          <div class="h-32 w-56">
+            <img
+              src="./assets/sponsors.png"
+              class="h-full w-full object-cover" />
+          </div>
+          <h3 class="text-center uppercase font-medium text-xl">
+            August 29, 2023 <br />
+            6PM to 9PM
+          </h3>
+        </div>
+
+        <div
+          class="flex gap-10 justify-center font-bold uppercase font-oswald text-2xl">
+          <h2>Joshua Bojo</h2>
+          <h2>Daniel Lawrance-Lopez</h2>
+          <h2>Joshua Ashley Heigold</h2>
+          <h2>Gary Basra</h2>
+        </div>
+      </div>
+    </div> -->
+
     <!-- Countdown -->
-    <div id="countdown" class="w-full bg-blue-600" style="height: 15vh">
+    <div id="countdown" class="w-full bg-neutral-900" style="height: 10vh">
       <div
         class="max-w-screen-xl h-full flex flex-wrap items-center justify-center mx-auto">
-        <div class="md:block hidden md:mr-8">
-          <h1 class="text-white font-bold md:text-4xl text-2xl font-jost">
+        <div class="sm:block hidden md:mr-8">
+          <h1 class="text-white font-bold text-3xl font-jost">
             Save the date!
           </h1>
         </div>
 
-        <div
-          class="text-center uppercase flex justify-center space-x-2 lg:space-x-14 text-white">
-          <div class="bg-blue-700 rounded-lg sm:w-24 w-20 sm:h-24 h-20 p-2">
-            <span
-              id="days"
-              class="flex justify-center text-2xl sm:text-5xl font-bold"></span>
+        <div class="text-center uppercase flex justify-center gap-2 text-white">
+          <div class="p-2">
+            <span id="days" class="font-bold"></span>
             days
           </div>
-
-          <div class="bg-blue-700 rounded-lg sm:w-24 w-20 sm:h-24 h-20 p-2">
-            <span
-              id="hours"
-              class="flex justify-center text-2xl sm:text-5xl font-bold"></span>
+          <div class="text-3xl">:</div>
+          <div class="p-2">
+            <span id="hours" class="font-bold"></span>
             hrs
           </div>
+          <div class="text-3xl">:</div>
 
-          <div class="bg-blue-700 rounded-lg sm:w-24 w-20 sm:h-24 h-20 p-2">
-            <span
-              id="minutes"
-              class="flex justify-center text-2xl sm:text-5xl font-bold"></span>
+          <div class="p-2">
+            <span id="minutes" class="font-bold"></span>
             min
           </div>
+          <div class="text-3xl">:</div>
 
-          <div class="bg-blue-700 rounded-lg sm:w-24 w-20 sm:h-24 h-20 p-2">
-            <span
-              id="seconds"
-              class="flex justify-center text-2xl sm:text-5xl font-bold"></span>
+          <div class="p-2">
+            <span id="seconds" class="font-bold"></span>
             sec
           </div>
         </div>
@@ -172,10 +191,10 @@
     <div class="w-full max-w-screen-xl mx-auto mt-8" id="about">
       <!-- About Event -->
       <div class="sm:flex md:pb-0 pb-4 bg-white">
-        <div class="md:w-1/2 w-full h-96">
+        <div class="md:w-1/2 w-full">
           <img
-            class="object-cover h-full w-full"
-            src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1112&q=80" />
+            class="object-contain h-full w-full"
+            src="./assets/Thejourney.png" />
         </div>
         <div class="md:w-1/2 w-full flex items-center justify-center">
           <div class="md:w-5/6 w-full p-2 flex flex-col items-center">
@@ -185,14 +204,15 @@
                 What is The Journey?
               </h3>
               <p class="text-base sm:mt-2 mb-4 font-jost">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum consequatur nesciunt libero. Quam nisi facilis quae
-                nam repellendus, aliquid possimus eius molestias esse cumque?
-                Ipsum at fuga itaque similique asperiores!
+                The Journey is an event to bring business minded individuals
+                together. The purpose is to create a community, not just
+                connections. They say it is lonely to get to the top, but I say,
+                let us bring a community together in our journey to the top! Are
+                you ready to join in on “The Journey”?
               </p>
 
               <button
-                class="uppercase focus:outline-none py-3 px-6 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-lg">
+                class="uppercase focus:outline-none py-3 px-6 text-white bg-neutral-700 hover:bg-neutral-500 font-medium rounded-lg text-lg">
                 <a href="https://www.eventbrite.ca/" target="_blank">
                   Buy Tickets
                 </a>
@@ -204,9 +224,7 @@
       <!--Venue -->
       <div class="sm:flex bg-neutral-50 md:pb-0 pb-4">
         <div class="md:w-1/2 md:order-2 order-1 w-full h-96">
-          <img
-            class="object-cover h-full w-full"
-            src="https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" />
+          <img class="object-cover h-full w-full" src="./assets/Venue.jpg" />
         </div>
         <div class="md:w-1/2 w-full flex items-center justify-center">
           <div class="md:w-4/6 w-full p-2 flex flex-col md:items-center">
@@ -216,9 +234,9 @@
                 Venue
               </h3>
               <span class="font-jost"
-                >Located at the heart of downtown, come and join us! Press
+                >Come and join us! Press
                 <a
-                  href="https://goo.gl/maps/Mtbku3TCqhBKuJG79"
+                  href="https://goo.gl/maps/AG9pCw6yoD2DyApM6"
                   target="_blank"
                   class="underline text-blue-500">
                   here </a
@@ -226,7 +244,10 @@
               >
               <div class="text-gray-600 font-bold font-jost mt-2">
                 Address:
-                <p class="font-light">2623 56 St NE, Calgary, AB T1Y 5J1</p>
+                <p class="font-light">
+                  Les Moulins La Fayette<br />
+                  8400 Blackfoot Trail SE, Calgary, AB T2H 0A7
+                </p>
               </div>
             </div>
           </div>
@@ -240,8 +261,8 @@
           <div class="flex w-full sm:flex-row flex-col sm:justify-between">
             <div class="sm:h-full h-96 sm:w-96">
               <img
-                class="h-full w-full object-cover"
-                src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" />
+                class="h-full w-full object-contain"
+                src="./assets/Joshua.png" />
             </div>
             <div
               class="w-full sm:w-5/6 flex flex-col justify-center p-4 sm:p-14">
@@ -250,12 +271,15 @@
                 About Me
               </h3>
               <p class="font-jost mt-2">
-                Hi, my name is Name. As an ambitious and driven individual, I am
-                passionate about bringing people together and creating a
-                positive impact within my community. With a keen eye for
-                organization and a natural flair for networking, I embarked on
-                the journey of starting this event with the goal of fostering
-                meaningful connections and empowering like-minded professionals.
+                On August 29,2023 I will be hosting an event to bring like
+                minded business students together to connect and network with
+                each other. The main purpose here is to not just gain a new
+                “connection”, but to build a community of business minded
+                individuals. As a Haskyne Student from the University of
+                Calgary, I understand the struggles of making new and genuine
+                friends, that is why I created this event, to solve that problem
+                and hopefully make your post high school experience a lot
+                better!
               </p>
 
               <div class="flex w-full mt-4 space-x-4">
@@ -289,145 +313,104 @@
         </div>
       </div>
     </div>
-    <!--Sponsors-->
+    <!--Speakers-->
     <div
-      id="sponsors"
+      id="speakers"
       class="w-full max-w-screen-xl pb-20 mx-auto p-4 bg-neutral-50">
       <h1
         class="text-center p-14 font-volkron text-blue-950 md:text-5xl text-5xl font-bold">
-        Sponsors
+        Speakers
       </h1>
+
       <div class="flex justify-center gap-6 flex-wrap font-jost">
         <div class="w-full md:w-96 p-8 bg-white rounded-md shadow-md">
+          <div class="flex">
+            <a
+              href="https://www.instagram.com/daniel_lawrancelopez/"
+              target="_blank">
+              <img class="h-8" src="./assets/instagram.svg" alt="instagram" />
+            </a>
+          </div>
           <div class="h-52 w-52 rounded-full mx-auto">
             <img
               class="h-full w-full object-cover rounded-full"
-              src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+              src="./assets/speakerdaniel.png"
               alt="Profile Picture" />
           </div>
           <div class="w-full flex flex-col items-center justify-center">
-            <h4 class="mt-4">Name: John</h4>
+            <h4 class="mt-4 font-bold">Name: Daniel Lawrance-Lopez</h4>
             <p class="font-jost text-center">
-              As an ambitious and driven individual, I am passionate about
-              bringing people together and creating a positive impact within my
-              community.
+              Financial Advisor / Entrepreneur
             </p>
-            <div class="flex mt-4 space-x-4">
-              <a href="https://www.facebook.com/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/facebook.svg"
-                  alt="facebook" />
-              </a>
-              <a href="https://www.instagram.com/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/instagram.svg"
-                  alt="instagram" />
-              </a>
-              <a href="https://www.youtube.com/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/youtube.svg"
-                  alt="youtube" />
-              </a>
-              <a href="https://www.linkedin.com/feed/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/linkedin.svg"
-                  alt="linkedin" />
-              </a>
-            </div>
           </div>
         </div>
         <div class="w-full md:w-96 p-8 bg-white rounded-md shadow-md">
+          <div class="flex">
+            <a href="https://www.instagram.com/ashleyheigold/" target="_blank">
+              <img class="h-8" src="./assets/instagram.svg" alt="instagram" />
+            </a>
+          </div>
           <div class="h-52 w-52 rounded-full mx-auto">
             <img
               class="h-full w-full object-cover rounded-full"
-              src="https://images.unsplash.com/photo-1602233158242-3ba0ac4d2167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80"
+              src="./assets/speakerashley.png"
               alt="Profile Picture" />
           </div>
           <div class="w-full flex flex-col items-center justify-center">
-            <h4 class="mt-4">Name: John</h4>
-            <p class="font-jost text-center">
-              As an ambitious and driven individual, I am passionate about
-              bringing people together and creating a positive impact within my
-              community.
-            </p>
-            <div class="flex mt-4 space-x-4">
-              <a href="https://www.facebook.com/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/facebook.svg"
-                  alt="facebook" />
-              </a>
-              <a href="https://www.instagram.com/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/instagram.svg"
-                  alt="instagram" />
-              </a>
-              <a href="https://www.youtube.com/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/youtube.svg"
-                  alt="youtube" />
-              </a>
-              <a href="https://www.linkedin.com/feed/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/linkedin.svg"
-                  alt="linkedin" />
-              </a>
-            </div>
+            <h4 class="mt-4 font-bold">Name: Ashley Heigold</h4>
+            <p class="font-jost text-center">Business Analyst</p>
           </div>
         </div>
         <div class="w-full md:w-96 p-8 bg-white rounded-md shadow-md">
+          <div class="flex">
+            <a href="https://www.instagram.com/gary_basra/" target="_blank">
+              <img class="h-8" src="./assets/instagram.svg" alt="instagram" />
+            </a>
+          </div>
           <div class="h-52 w-52 rounded-full mx-auto">
             <img
               class="h-full w-full object-cover rounded-full"
-              src="https://images.unsplash.com/photo-1495047651840-fcda6e971948?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              src="./assets/speakergary.png"
               alt="Profile Picture" />
           </div>
           <div class="w-full flex flex-col items-center justify-center">
-            <h4 class="mt-4">Name: John</h4>
-            <p class="font-jost text-center">
-              As an ambitious and driven individual, I am passionate about
-              bringing people together and creating a positive impact within my
-              community.
-            </p>
-            <div class="flex mt-4 space-x-4">
-              <a href="https://www.facebook.com/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/facebook.svg"
-                  alt="facebook" />
-              </a>
-              <a href="https://www.instagram.com/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/instagram.svg"
-                  alt="instagram" />
-              </a>
-              <a href="https://www.youtube.com/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/youtube.svg"
-                  alt="youtube" />
-              </a>
-              <a href="https://www.linkedin.com/feed/" target="_blank">
-                <img
-                  class="h-8 text-blue-600"
-                  src="./assets/linkedin.svg"
-                  alt="linkedin" />
-              </a>
-            </div>
+            <h4 class="mt-4 font-bold">Name: Gary Basra</h4>
+            <p class="font-jost text-center">Former Accountant, now Realtor</p>
+          </div>
+        </div>
+        <div class="w-full md:w-96 p-8 bg-white rounded-md shadow-md">
+          <div class="flex">
+            <a href="https://www.instagram.com/joshua.bojo2" target="_blank">
+              <img class="h-8" src="./assets/instagram.svg" alt="instagram" />
+            </a>
+          </div>
+          <div class="h-52 w-52 rounded-full mx-auto">
+            <img
+              class="h-full w-full object-cover rounded-full"
+              src="./assets/speakerjosh.png"
+              alt="Profile Picture" />
+          </div>
+          <div class="w-full flex flex-col items-center justify-center">
+            <h4 class="mt-4 font-bold">Name: Joshua Bojo</h4>
+            <p class="font-jost text-center">Entrepreneur</p>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Contact -->
     <div id="contact" class="max-w-screen-xl mx-auto bg-white mb-8">
+      <!-- Location -->
+      <div class="w-full h-96" id="location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.085265590936!2d-114.04970498751672!3d50.97761454914908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537171e5abc15efd%3A0x1cf91d02c8e83e43!2sLes%20Moulins%20La%20Fayette!5e0!3m2!1sen!2sca!4v1690881973272!5m2!1sen!2sca"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <div class="sm:flex w-full">
         <!-- Socials -->
         <div class="sm:w-1/2 p-4 bg-white">
@@ -441,20 +424,19 @@
             information you seek. Looking forward to hearing from you!
           </p>
 
-          <div class="mt-6 grid md:grid-cols-3 grid-cols-1 gap-4">
-            <div class="text-gray-600 flex flex-col font-bold font-jost">
-              Phone: <span class="font-light">403 403 4033</span>
+          <div class="mt-6 grid md:grid-cols-2 grid-cols-1">
+            <div
+              class="text-gray-600 flex flex-col font-bold col-span-2 font-jost">
+              Address:
+              <span class="font-light"
+                >8400 Blackfoot Trail SE, Calgary, AB T2H 0A7</span
+              >
             </div>
             <div class="text-gray-600 flex flex-col font-bold font-jost">
               Email:
               <a href="mailto: abc@example.com">
-                <span class="font-light">email@gmail.com</span></a
+                <span class="font-light">joshuadavidbojo@gmail.com</span></a
               >
-            </div>
-            <div
-              class="text-gray-600 flex flex-col font-bold col-span-2 font-jost">
-              Address:
-              <span class="font-light">2623 56 St NE, Calgary, AB T1Y 5J1</span>
             </div>
           </div>
           <div class="flex items-center mt-14 justify-center space-x-4">
@@ -494,8 +476,11 @@
             <h1 class="text-3xl font-bold mb-4 text-blue-950 font-volkron">
               Leave a Message
             </h1>
-            <form id="contact_form" method="POST" class="space-y-4">
-              <!-- action="https://formsubmit.co/donrey427@gmail.com" -->
+            <form
+              action="https://formsubmit.co/joshuadavidbojo@gmail.com"
+              id="contact_form"
+              method="POST"
+              class="space-y-4">
               <div class="flex flex-col">
                 <label for="name" class="text-blue-950 font-bold mb-1"
                   >Full Name</label
@@ -543,48 +528,29 @@
           </div>
         </div>
       </div>
-      <!-- Location -->
-      <div class="w-full h-96" id="location">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20053.118653466!2d-113.95785335!3d51.07819839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537164ae4403b267%3A0xeee823d941589438!2sVillage%20Square%20Leisure%20Centre!5e0!3m2!1sen!2sca!4v1690525373848!5m2!1sen!2sca"
-          width="100%"
-          height="100%"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-blue-700 bottom-0 left-0 w-full">
+    <footer class="bg-neutral-900 bottom-0 left-0 w-full">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
-          <a href="" class="flex items-center mb-4 sm:mb-0">
-            <span
-              class="self-center text-2xl font-semibold whitespace-nowrap text-white"
-              >Logo</span
-            >
+          <a href="#home" class="flex items-center">
+            <div class="w-16">
+              <img src="./assets/WhiteLogo.png" class="h-full w-full" />
+            </div>
           </a>
           <ul
             class="flex flex-wrap items-center mb-6 text-sm font-medium text-neutral-200 sm:mb-0">
             <li>
-              <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+              <a href="#about" class="mr-4 hover:underline md:mr-6">About</a>
             </li>
+
             <li>
-              <a href="#" class="mr-4 hover:underline md:mr-6"
-                >Privacy Policy</a
-              >
-            </li>
-            <li>
-              <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Contact</a>
+              <a href="#contact" class="hover:underline">Contact</a>
             </li>
           </ul>
         </div>
-        <hr class="my-6 border-blue-800 sm:mx-auto lg:my-8" />
+        <hr class="my-6 border-neutral-500 sm:mx-auto lg:my-8" />
         <span class="block text-sm text-gray-200 sm:text-center"
           >© 2023 <a href="" class="hover:underline">The Journey YYC</a>. All
           Rights Reserved.</span

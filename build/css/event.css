@@ -1,0 +1,11 @@
+.event-live {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    animation: blink 1s infinite;
+    /* Apply the 'blink' animation with 1 second duration and run it infinitely */
+}
