@@ -7,6 +7,7 @@ module.exports = {
         titan: "'Gloock', serif",
         jost: "'Jost', sans-serif;",
         volkron: "'Vollkorn', serif",
+        oswald: "'Oswald', sans-serif",
       },
     },
   },

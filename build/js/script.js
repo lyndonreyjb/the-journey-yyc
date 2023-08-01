@@ -10,7 +10,7 @@ window.addEventListener("scroll", function () {
   }
 });
 // Set the date we're counting down to
-let countDownDate = new Date("Aug 28, 2023 15:37:25").getTime();
+let countDownDate = new Date("Aug 29, 2023 18: 00:00").getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function () {
@@ -35,7 +35,9 @@ let x = setInterval(function () {
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
+    const countdownElement = document.getElementById("countdown");
+    countdownElement.innerHTML = "Event Now Live!";
+    countdownElement.classList.add("event-live");
   }
 }, 1000);
 
